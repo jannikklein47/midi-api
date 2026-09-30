@@ -1,7 +1,7 @@
 const express = require("express");
 const { exec } = require("child_process");
 
-// receive post request on /pc with a query as number
+// receive get request on /pc with a query as number
 const app = express();
 app.get("/pc", (req, res) => {
   const n = Number(req.query.n).toString(16).padStart(2, "0");
