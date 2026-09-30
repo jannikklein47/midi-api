@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "receive": "node receiver.js",
+    "send": "node sender.js"
   },
   "author": "Jannik Klein",
   "license": "ISC",
   "dependencies": {
+    "easymidi": "^3.2.0",
     "express": "^5.2.1"
   }
 }
