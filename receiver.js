@@ -17,7 +17,9 @@ app.get("/pc", (req, res) => {
       console.error(`stderr: ${stderr}`);
       return;
     }
-    console.log(`Received and processed MIDI PC ${n}.`);
+    console.log(
+      `Received and processed MIDI PC 0x${n}, which is number ${req.query.n}`,
+    );
   });
 
   res.send("ok");
